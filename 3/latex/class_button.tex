@@ -1,0 +1,147 @@
+\hypertarget{class_button}{}\section{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a3b36df1ae23c58aedb9e15a713159459}{Button}} ()
+\item 
+\mbox{\hyperlink{class_button_a2a001eb9c3cc8ae54768a850dd345002}{$\sim$\+Button}} ()
+\item 
+bool \mbox{\hyperlink{class_button_aec798706951af6d664a7c88e83b59b73}{load\+From\+File}} (std\+::string path, S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer=N\+U\+LL)
+\item 
+void \mbox{\hyperlink{class_button_ab31b0993b959cf9863eb2cf22a7ae18b}{free}} ()
+\item 
+void \mbox{\hyperlink{class_button_a353eabb5dcb11670e8ce1094f3ba77b4}{set\+Color}} (Uint8 red, Uint8 green, Uint8 blue)
+\item 
+void \mbox{\hyperlink{class_button_a6abacb86ed21f8d06dca634a8ff9bde2}{set\+Blend\+Mode}} (S\+D\+L\+\_\+\+Blend\+Mode blending)
+\item 
+void \mbox{\hyperlink{class_button_aa2fa8986d2d5c2e44d8c17373863a5fa}{set\+Alpha}} (Uint8 alpha)
+\item 
+void \mbox{\hyperlink{class_button_a0d2179449697d361c97e533c839a87d0}{render}} (int x, int y, S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer=N\+U\+LL, S\+D\+L\+\_\+\+Rect $\ast$clip=N\+U\+LL, double angle=0.\+0, S\+D\+L\+\_\+\+Point $\ast$center=N\+U\+LL, S\+D\+L\+\_\+\+Renderer\+Flip flip=S\+D\+L\+\_\+\+F\+L\+I\+P\+\_\+\+N\+O\+NE)
+\item 
+int \mbox{\hyperlink{class_button_a78bb3e6eeb85f91d07c98b392a816f3f}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_button_a9ed8c54a9a7f468ea3fa4417f954ec23}{get\+Height}} ()
+\item 
+bool \mbox{\hyperlink{class_button_aa8b6e2e47a230747970b641aa7d75de5}{run\+\_\+light}} (int x, int y, S\+D\+L\+\_\+\+Event event)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_button_ac5e57d9ffee5d8bae504d008562c1951}{m\+Texture}}
+\item 
+int \mbox{\hyperlink{class_button_a64b130b0efe8346077d12856bd2b1a93}{m\+Width}}
+\item 
+int \mbox{\hyperlink{class_button_a16e3433e25036f17d11ce38b178596bd}{m\+Height}}
+\item 
+int \mbox{\hyperlink{class_button_acbdc1b6ff9b8651ed0bcfaae9fe74610}{file\+\_\+num}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_button_a3b36df1ae23c58aedb9e15a713159459}\label{class_button_a3b36df1ae23c58aedb9e15a713159459}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a2a001eb9c3cc8ae54768a850dd345002}\label{class_button_a2a001eb9c3cc8ae54768a850dd345002}} 
+\index{Button@{Button}!````~Button@{$\sim$\+Button}}
+\index{````~Button@{$\sim$\+Button}!Button@{Button}}
+\subsubsection{\texorpdfstring{$\sim$\+Button()}{~Button()}}
+{\footnotesize\ttfamily Button\+::$\sim$\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_ab31b0993b959cf9863eb2cf22a7ae18b}\label{class_button_ab31b0993b959cf9863eb2cf22a7ae18b}} 
+\index{Button@{Button}!free@{free}}
+\index{free@{free}!Button@{Button}}
+\subsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void Button\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a9ed8c54a9a7f468ea3fa4417f954ec23}\label{class_button_a9ed8c54a9a7f468ea3fa4417f954ec23}} 
+\index{Button@{Button}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Button@{Button}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Button\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a78bb3e6eeb85f91d07c98b392a816f3f}\label{class_button_a78bb3e6eeb85f91d07c98b392a816f3f}} 
+\index{Button@{Button}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Button@{Button}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Button\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_aec798706951af6d664a7c88e83b59b73}\label{class_button_aec798706951af6d664a7c88e83b59b73}} 
+\index{Button@{Button}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!Button@{Button}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily bool Button\+::load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a0d2179449697d361c97e533c839a87d0}\label{class_button_a0d2179449697d361c97e533c839a87d0}} 
+\index{Button@{Button}!render@{render}}
+\index{render@{render}!Button@{Button}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Button\+::render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer = {\ttfamily NULL},  }\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{clip = {\ttfamily NULL},  }\item[{double}]{angle = {\ttfamily 0.0},  }\item[{S\+D\+L\+\_\+\+Point $\ast$}]{center = {\ttfamily NULL},  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip = {\ttfamily SDL\+\_\+FLIP\+\_\+NONE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_aa8b6e2e47a230747970b641aa7d75de5}\label{class_button_aa8b6e2e47a230747970b641aa7d75de5}} 
+\index{Button@{Button}!run\+\_\+light@{run\+\_\+light}}
+\index{run\+\_\+light@{run\+\_\+light}!Button@{Button}}
+\subsubsection{\texorpdfstring{run\+\_\+light()}{run\_light()}}
+{\footnotesize\ttfamily bool Button\+::run\+\_\+light (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{S\+D\+L\+\_\+\+Event}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_aa2fa8986d2d5c2e44d8c17373863a5fa}\label{class_button_aa2fa8986d2d5c2e44d8c17373863a5fa}} 
+\index{Button@{Button}!set\+Alpha@{set\+Alpha}}
+\index{set\+Alpha@{set\+Alpha}!Button@{Button}}
+\subsubsection{\texorpdfstring{set\+Alpha()}{setAlpha()}}
+{\footnotesize\ttfamily void Button\+::set\+Alpha (\begin{DoxyParamCaption}\item[{Uint8}]{alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a6abacb86ed21f8d06dca634a8ff9bde2}\label{class_button_a6abacb86ed21f8d06dca634a8ff9bde2}} 
+\index{Button@{Button}!set\+Blend\+Mode@{set\+Blend\+Mode}}
+\index{set\+Blend\+Mode@{set\+Blend\+Mode}!Button@{Button}}
+\subsubsection{\texorpdfstring{set\+Blend\+Mode()}{setBlendMode()}}
+{\footnotesize\ttfamily void Button\+::set\+Blend\+Mode (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Blend\+Mode}]{blending }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_button_a353eabb5dcb11670e8ce1094f3ba77b4}\label{class_button_a353eabb5dcb11670e8ce1094f3ba77b4}} 
+\index{Button@{Button}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Button@{Button}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Button\+::set\+Color (\begin{DoxyParamCaption}\item[{Uint8}]{red,  }\item[{Uint8}]{green,  }\item[{Uint8}]{blue }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_button_acbdc1b6ff9b8651ed0bcfaae9fe74610}\label{class_button_acbdc1b6ff9b8651ed0bcfaae9fe74610}} 
+\index{Button@{Button}!file\+\_\+num@{file\+\_\+num}}
+\index{file\+\_\+num@{file\+\_\+num}!Button@{Button}}
+\subsubsection{\texorpdfstring{file\+\_\+num}{file\_num}}
+{\footnotesize\ttfamily int Button\+::file\+\_\+num = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_button_a16e3433e25036f17d11ce38b178596bd}\label{class_button_a16e3433e25036f17d11ce38b178596bd}} 
+\index{Button@{Button}!m\+Height@{m\+Height}}
+\index{m\+Height@{m\+Height}!Button@{Button}}
+\subsubsection{\texorpdfstring{m\+Height}{mHeight}}
+{\footnotesize\ttfamily int Button\+::m\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_button_ac5e57d9ffee5d8bae504d008562c1951}\label{class_button_ac5e57d9ffee5d8bae504d008562c1951}} 
+\index{Button@{Button}!m\+Texture@{m\+Texture}}
+\index{m\+Texture@{m\+Texture}!Button@{Button}}
+\subsubsection{\texorpdfstring{m\+Texture}{mTexture}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ Button\+::m\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_button_a64b130b0efe8346077d12856bd2b1a93}\label{class_button_a64b130b0efe8346077d12856bd2b1a93}} 
+\index{Button@{Button}!m\+Width@{m\+Width}}
+\index{m\+Width@{m\+Width}!Button@{Button}}
+\subsubsection{\texorpdfstring{m\+Width}{mWidth}}
+{\footnotesize\ttfamily int Button\+::m\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+U\+I-\/\+Light-\/\+Fast/\mbox{\hyperlink{_button_8h}{Button.\+h}}\item 
+C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+U\+I-\/\+Light-\/\+Fast/\mbox{\hyperlink{_button_8cpp}{Button.\+cpp}}\end{DoxyCompactItemize}

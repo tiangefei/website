@@ -1,0 +1,164 @@
+\hypertarget{_light1_8cpp}{}\section{C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+No\+U\+I-\/\+Two\+Light\+Source/\+Light1/\+Light1.cpp File Reference}
+\label{_light1_8cpp}\index{C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+No\+U\+I-\/\+Two\+Light\+Source/\+Light1/\+Light1.\+cpp@{C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+No\+U\+I-\/\+Two\+Light\+Source/\+Light1/\+Light1.\+cpp}}
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_light1_8cpp_a1ecc6576a5e8b11861a81992e1768178}{add\+Wall}} (int x, int y, int w, int h, int a)
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a2467546a905f0a2c90b32ac69a55e737}{mult}} (int a\+\_\+x, int a\+\_\+y, int b\+\_\+x, int b\+\_\+y, int c\+\_\+x, int c\+\_\+y)
+\item 
+bool \mbox{\hyperlink{_light1_8cpp_a81d00894fe2c39ea3dd721b9f4a81d89}{intersect}} (int a\+\_\+x, int a\+\_\+y, int b\+\_\+x, int b\+\_\+y, int c\+\_\+x, int c\+\_\+y, int d\+\_\+x, int d\+\_\+y)
+\item 
+int \mbox{\hyperlink{_light1_8cpp_abfdbdd177bfa9d32d86c836550ab8001}{distance}} (int a\+\_\+x, int a\+\_\+y, int b\+\_\+x, int b\+\_\+y)
+\item 
+bool \mbox{\hyperlink{_light1_8cpp_a21866c9e9ca0043d2d597c0c7ee5797f}{see\+Walls}} (int w, int h, int l\+\_\+x, int l\+\_\+y)
+\item 
+bool \mbox{\hyperlink{_light1_8cpp_af4de098481b6747b299b02ed1a51ec38}{inw\+Wall}} (int w, int h)
+\item 
+void \mbox{\hyperlink{_light1_8cpp_a49a41b28541ddbb57d87a7aced6460d5}{draw\+Wall}} ()
+\item 
+void \mbox{\hyperlink{_light1_8cpp_a56c5cf8a568cff737ff95520cbe6b405}{draw}} ()
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a700a0caa5b70a06d1064e576f9f3cf65}{main}} (int argc, char $\ast$args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{_light1_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}{window}}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{_light1_8cpp_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}}
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a59c3bba4b17cd5e19f149ea175fa6989}{W\+I\+D\+TH}} = 500
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a4e81322eb1085aca9cd7c5527f5e4c6b}{H\+E\+I\+G\+HT}} = 500
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a86d5b5904f08be9a6808e3cf2f261de8}{l1\+\_\+x}} = 250
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a993d2c01f233f715593a77aedee18ba5}{l1\+\_\+y}} = 0
+\item 
+int \mbox{\hyperlink{_light1_8cpp_aec199df845fd93b07d637c48fb0d92ce}{l2\+\_\+x}} = 250
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a7972ee7e94e2b882923f5d45a5d1d428}{l2\+\_\+y}} = 250
+\item 
+int \mbox{\hyperlink{_light1_8cpp_a0cb76cb18e90329f4297eb6f183f6a71}{walls}} \mbox{[}5\mbox{]}\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_light1_8cpp_a1ecc6576a5e8b11861a81992e1768178}\label{_light1_8cpp_a1ecc6576a5e8b11861a81992e1768178}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!add\+Wall@{add\+Wall}}
+\index{add\+Wall@{add\+Wall}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{add\+Wall()}{addWall()}}
+{\footnotesize\ttfamily void add\+Wall (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_abfdbdd177bfa9d32d86c836550ab8001}\label{_light1_8cpp_abfdbdd177bfa9d32d86c836550ab8001}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!distance@{distance}}
+\index{distance@{distance}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily int distance (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+x,  }\item[{int}]{a\+\_\+y,  }\item[{int}]{b\+\_\+x,  }\item[{int}]{b\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_a56c5cf8a568cff737ff95520cbe6b405}\label{_light1_8cpp_a56c5cf8a568cff737ff95520cbe6b405}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!draw@{draw}}
+\index{draw@{draw}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_a49a41b28541ddbb57d87a7aced6460d5}\label{_light1_8cpp_a49a41b28541ddbb57d87a7aced6460d5}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!draw\+Wall@{draw\+Wall}}
+\index{draw\+Wall@{draw\+Wall}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+Wall()}{drawWall()}}
+{\footnotesize\ttfamily void draw\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_a81d00894fe2c39ea3dd721b9f4a81d89}\label{_light1_8cpp_a81d00894fe2c39ea3dd721b9f4a81d89}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!intersect@{intersect}}
+\index{intersect@{intersect}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily bool intersect (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+x,  }\item[{int}]{a\+\_\+y,  }\item[{int}]{b\+\_\+x,  }\item[{int}]{b\+\_\+y,  }\item[{int}]{c\+\_\+x,  }\item[{int}]{c\+\_\+y,  }\item[{int}]{d\+\_\+x,  }\item[{int}]{d\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_af4de098481b6747b299b02ed1a51ec38}\label{_light1_8cpp_af4de098481b6747b299b02ed1a51ec38}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!inw\+Wall@{inw\+Wall}}
+\index{inw\+Wall@{inw\+Wall}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{inw\+Wall()}{inwWall()}}
+{\footnotesize\ttfamily bool inw\+Wall (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_a700a0caa5b70a06d1064e576f9f3cf65}\label{_light1_8cpp_a700a0caa5b70a06d1064e576f9f3cf65}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!main@{main}}
+\index{main@{main}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_a2467546a905f0a2c90b32ac69a55e737}\label{_light1_8cpp_a2467546a905f0a2c90b32ac69a55e737}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!mult@{mult}}
+\index{mult@{mult}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{mult()}{mult()}}
+{\footnotesize\ttfamily int mult (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+x,  }\item[{int}]{a\+\_\+y,  }\item[{int}]{b\+\_\+x,  }\item[{int}]{b\+\_\+y,  }\item[{int}]{c\+\_\+x,  }\item[{int}]{c\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light1_8cpp_a21866c9e9ca0043d2d597c0c7ee5797f}\label{_light1_8cpp_a21866c9e9ca0043d2d597c0c7ee5797f}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!see\+Walls@{see\+Walls}}
+\index{see\+Walls@{see\+Walls}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{see\+Walls()}{seeWalls()}}
+{\footnotesize\ttfamily bool see\+Walls (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{l\+\_\+x,  }\item[{int}]{l\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_light1_8cpp_a4e81322eb1085aca9cd7c5527f5e4c6b}\label{_light1_8cpp_a4e81322eb1085aca9cd7c5527f5e4c6b}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!H\+E\+I\+G\+HT@{H\+E\+I\+G\+HT}}
+\index{H\+E\+I\+G\+HT@{H\+E\+I\+G\+HT}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{H\+E\+I\+G\+HT}{HEIGHT}}
+{\footnotesize\ttfamily int H\+E\+I\+G\+HT = 500}
+
+\mbox{\Hypertarget{_light1_8cpp_a86d5b5904f08be9a6808e3cf2f261de8}\label{_light1_8cpp_a86d5b5904f08be9a6808e3cf2f261de8}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!l1\+\_\+x@{l1\+\_\+x}}
+\index{l1\+\_\+x@{l1\+\_\+x}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{l1\+\_\+x}{l1\_x}}
+{\footnotesize\ttfamily int l1\+\_\+x = 250}
+
+\mbox{\Hypertarget{_light1_8cpp_a993d2c01f233f715593a77aedee18ba5}\label{_light1_8cpp_a993d2c01f233f715593a77aedee18ba5}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!l1\+\_\+y@{l1\+\_\+y}}
+\index{l1\+\_\+y@{l1\+\_\+y}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{l1\+\_\+y}{l1\_y}}
+{\footnotesize\ttfamily int l1\+\_\+y = 0}
+
+\mbox{\Hypertarget{_light1_8cpp_aec199df845fd93b07d637c48fb0d92ce}\label{_light1_8cpp_aec199df845fd93b07d637c48fb0d92ce}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!l2\+\_\+x@{l2\+\_\+x}}
+\index{l2\+\_\+x@{l2\+\_\+x}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{l2\+\_\+x}{l2\_x}}
+{\footnotesize\ttfamily int l2\+\_\+x = 250}
+
+\mbox{\Hypertarget{_light1_8cpp_a7972ee7e94e2b882923f5d45a5d1d428}\label{_light1_8cpp_a7972ee7e94e2b882923f5d45a5d1d428}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!l2\+\_\+y@{l2\+\_\+y}}
+\index{l2\+\_\+y@{l2\+\_\+y}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{l2\+\_\+y}{l2\_y}}
+{\footnotesize\ttfamily int l2\+\_\+y = 250}
+
+\mbox{\Hypertarget{_light1_8cpp_a966da7a60c4ea3ba301e26ccc5efe452}\label{_light1_8cpp_a966da7a60c4ea3ba301e26ccc5efe452}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!renderer@{renderer}}
+\index{renderer@{renderer}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ renderer}
+
+\mbox{\Hypertarget{_light1_8cpp_a0cb76cb18e90329f4297eb6f183f6a71}\label{_light1_8cpp_a0cb76cb18e90329f4297eb6f183f6a71}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!walls@{walls}}
+\index{walls@{walls}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{walls}{walls}}
+{\footnotesize\ttfamily int walls\mbox{[}5\mbox{]}\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{_light1_8cpp_a59c3bba4b17cd5e19f149ea175fa6989}\label{_light1_8cpp_a59c3bba4b17cd5e19f149ea175fa6989}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!W\+I\+D\+TH@{W\+I\+D\+TH}}
+\index{W\+I\+D\+TH@{W\+I\+D\+TH}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{W\+I\+D\+TH}{WIDTH}}
+{\footnotesize\ttfamily int W\+I\+D\+TH = 500}
+
+\mbox{\Hypertarget{_light1_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}\label{_light1_8cpp_aaa8e409e04dcf575ef63fd5fb3db06f9}} 
+\index{Light1.\+cpp@{Light1.\+cpp}!window@{window}}
+\index{window@{window}!Light1.\+cpp@{Light1.\+cpp}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ window}
+

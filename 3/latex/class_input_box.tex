@@ -1,0 +1,150 @@
+\hypertarget{class_input_box}{}\section{Input\+Box Class Reference}
+\label{class_input_box}\index{Input\+Box@{Input\+Box}}
+
+
+{\ttfamily \#include $<$Input\+Box.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_box_a2cc665db8204ff3977b3601983dcad37}{Input\+Box}} ()
+\item 
+\mbox{\hyperlink{class_input_box_abe56acf07570e1ff883705edf3223b5b}{$\sim$\+Input\+Box}} ()
+\item 
+void \mbox{\hyperlink{class_input_box_aa5730c412bd2cb438d3920d457422899}{free}} ()
+\item 
+void \mbox{\hyperlink{class_input_box_a9a9388c59f2621ff2b59132c85dc5c73}{set\+Color}} (Uint8 red, Uint8 green, Uint8 blue)
+\item 
+void \mbox{\hyperlink{class_input_box_a98d23652bac1d030d49beccf2024e776}{set\+Blend\+Mode}} (S\+D\+L\+\_\+\+Blend\+Mode blending)
+\item 
+void \mbox{\hyperlink{class_input_box_a89ed2dbe4177e9f1d1cf78b61b2bc160}{set\+Alpha}} (Uint8 alpha)
+\item 
+void \mbox{\hyperlink{class_input_box_aaef7aedcfacc3258bdc97b1655373ac4}{render}} (int x, int y, S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer=N\+U\+LL, S\+D\+L\+\_\+\+Rect $\ast$clip=N\+U\+LL, double angle=0.\+0, S\+D\+L\+\_\+\+Point $\ast$center=N\+U\+LL, S\+D\+L\+\_\+\+Renderer\+Flip flip=S\+D\+L\+\_\+\+F\+L\+I\+P\+\_\+\+N\+O\+NE)
+\item 
+int \mbox{\hyperlink{class_input_box_a2b728710292ab4f2503d8fcf660e5c1a}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_input_box_a8c812e49244c0e602e19bd7924b8779e}{get\+Height}} ()
+\item 
+int \mbox{\hyperlink{class_input_box_a23ab41b0bda383c054c2b25257df47e8}{handle\+\_\+events\+\_\+input}} (int x, int y, S\+D\+L\+\_\+\+Event event)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_input_box_a484ab55097789bae12b3c6e4264f836e}{texture\+Text}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_input_box_a1a815a401dbec48509df67064c6285fa}{m\+Texture}}
+\item 
+bool \mbox{\hyperlink{class_input_box_a087fe852dbd3e02ad67b99eff151acc4}{input\+\_\+now}} = false
+\item 
+int \mbox{\hyperlink{class_input_box_a2f409469e712032ebafe5df6c6505ef6}{m\+Width}}
+\item 
+int \mbox{\hyperlink{class_input_box_a3d656bbf2eae8d5e640f3f09e4340eed}{m\+Height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_input_box_a2cc665db8204ff3977b3601983dcad37}\label{class_input_box_a2cc665db8204ff3977b3601983dcad37}} 
+\index{Input\+Box@{Input\+Box}!Input\+Box@{Input\+Box}}
+\index{Input\+Box@{Input\+Box}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{Input\+Box()}{InputBox()}}
+{\footnotesize\ttfamily Input\+Box\+::\+Input\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_abe56acf07570e1ff883705edf3223b5b}\label{class_input_box_abe56acf07570e1ff883705edf3223b5b}} 
+\index{Input\+Box@{Input\+Box}!````~Input\+Box@{$\sim$\+Input\+Box}}
+\index{````~Input\+Box@{$\sim$\+Input\+Box}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{$\sim$\+Input\+Box()}{~InputBox()}}
+{\footnotesize\ttfamily Input\+Box\+::$\sim$\+Input\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_input_box_aa5730c412bd2cb438d3920d457422899}\label{class_input_box_aa5730c412bd2cb438d3920d457422899}} 
+\index{Input\+Box@{Input\+Box}!free@{free}}
+\index{free@{free}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily void Input\+Box\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_a8c812e49244c0e602e19bd7924b8779e}\label{class_input_box_a8c812e49244c0e602e19bd7924b8779e}} 
+\index{Input\+Box@{Input\+Box}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Input\+Box\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_a2b728710292ab4f2503d8fcf660e5c1a}\label{class_input_box_a2b728710292ab4f2503d8fcf660e5c1a}} 
+\index{Input\+Box@{Input\+Box}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Input\+Box\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_a23ab41b0bda383c054c2b25257df47e8}\label{class_input_box_a23ab41b0bda383c054c2b25257df47e8}} 
+\index{Input\+Box@{Input\+Box}!handle\+\_\+events\+\_\+input@{handle\+\_\+events\+\_\+input}}
+\index{handle\+\_\+events\+\_\+input@{handle\+\_\+events\+\_\+input}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{handle\+\_\+events\+\_\+input()}{handle\_events\_input()}}
+{\footnotesize\ttfamily int Input\+Box\+::handle\+\_\+events\+\_\+input (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{S\+D\+L\+\_\+\+Event}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_aaef7aedcfacc3258bdc97b1655373ac4}\label{class_input_box_aaef7aedcfacc3258bdc97b1655373ac4}} 
+\index{Input\+Box@{Input\+Box}!render@{render}}
+\index{render@{render}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Input\+Box\+::render (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer = {\ttfamily NULL},  }\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{clip = {\ttfamily NULL},  }\item[{double}]{angle = {\ttfamily 0.0},  }\item[{S\+D\+L\+\_\+\+Point $\ast$}]{center = {\ttfamily NULL},  }\item[{S\+D\+L\+\_\+\+Renderer\+Flip}]{flip = {\ttfamily SDL\+\_\+FLIP\+\_\+NONE} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_a89ed2dbe4177e9f1d1cf78b61b2bc160}\label{class_input_box_a89ed2dbe4177e9f1d1cf78b61b2bc160}} 
+\index{Input\+Box@{Input\+Box}!set\+Alpha@{set\+Alpha}}
+\index{set\+Alpha@{set\+Alpha}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{set\+Alpha()}{setAlpha()}}
+{\footnotesize\ttfamily void Input\+Box\+::set\+Alpha (\begin{DoxyParamCaption}\item[{Uint8}]{alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_a98d23652bac1d030d49beccf2024e776}\label{class_input_box_a98d23652bac1d030d49beccf2024e776}} 
+\index{Input\+Box@{Input\+Box}!set\+Blend\+Mode@{set\+Blend\+Mode}}
+\index{set\+Blend\+Mode@{set\+Blend\+Mode}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{set\+Blend\+Mode()}{setBlendMode()}}
+{\footnotesize\ttfamily void Input\+Box\+::set\+Blend\+Mode (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Blend\+Mode}]{blending }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_input_box_a9a9388c59f2621ff2b59132c85dc5c73}\label{class_input_box_a9a9388c59f2621ff2b59132c85dc5c73}} 
+\index{Input\+Box@{Input\+Box}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Input\+Box\+::set\+Color (\begin{DoxyParamCaption}\item[{Uint8}]{red,  }\item[{Uint8}]{green,  }\item[{Uint8}]{blue }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_input_box_a087fe852dbd3e02ad67b99eff151acc4}\label{class_input_box_a087fe852dbd3e02ad67b99eff151acc4}} 
+\index{Input\+Box@{Input\+Box}!input\+\_\+now@{input\+\_\+now}}
+\index{input\+\_\+now@{input\+\_\+now}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{input\+\_\+now}{input\_now}}
+{\footnotesize\ttfamily bool Input\+Box\+::input\+\_\+now = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_input_box_a3d656bbf2eae8d5e640f3f09e4340eed}\label{class_input_box_a3d656bbf2eae8d5e640f3f09e4340eed}} 
+\index{Input\+Box@{Input\+Box}!m\+Height@{m\+Height}}
+\index{m\+Height@{m\+Height}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{m\+Height}{mHeight}}
+{\footnotesize\ttfamily int Input\+Box\+::m\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_input_box_a1a815a401dbec48509df67064c6285fa}\label{class_input_box_a1a815a401dbec48509df67064c6285fa}} 
+\index{Input\+Box@{Input\+Box}!m\+Texture@{m\+Texture}}
+\index{m\+Texture@{m\+Texture}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{m\+Texture}{mTexture}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ Input\+Box\+::m\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_input_box_a2f409469e712032ebafe5df6c6505ef6}\label{class_input_box_a2f409469e712032ebafe5df6c6505ef6}} 
+\index{Input\+Box@{Input\+Box}!m\+Width@{m\+Width}}
+\index{m\+Width@{m\+Width}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{m\+Width}{mWidth}}
+{\footnotesize\ttfamily int Input\+Box\+::m\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_input_box_a484ab55097789bae12b3c6e4264f836e}\label{class_input_box_a484ab55097789bae12b3c6e4264f836e}} 
+\index{Input\+Box@{Input\+Box}!texture\+Text@{texture\+Text}}
+\index{texture\+Text@{texture\+Text}!Input\+Box@{Input\+Box}}
+\subsubsection{\texorpdfstring{texture\+Text}{textureText}}
+{\footnotesize\ttfamily std\+::string Input\+Box\+::texture\+Text}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+U\+I-\/\+Light-\/\+Fast/\mbox{\hyperlink{_input_box_8h}{Input\+Box.\+h}}\item 
+C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+U\+I-\/\+Light-\/\+Fast/\mbox{\hyperlink{_input_box_8cpp}{Input\+Box.\+cpp}}\end{DoxyCompactItemize}

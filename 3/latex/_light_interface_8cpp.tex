@@ -1,0 +1,159 @@
+\hypertarget{_light_interface_8cpp}{}\section{C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+U\+I-\/\+Light-\/\+Fast/\+Light\+Interface.cpp File Reference}
+\label{_light_interface_8cpp}\index{C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+U\+I-\/\+Light-\/\+Fast/\+Light\+Interface.\+cpp@{C\+:/\+Users/tiang/\+Documents/\+Git\+Hub/final-\/project-\/pdd3/submit/\+U\+I-\/\+Light-\/\+Fast/\+Light\+Interface.\+cpp}}
+{\ttfamily \#include \char`\"{}Light\+Interface.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_light_interface_8cpp_a1ecc6576a5e8b11861a81992e1768178}{add\+Wall}} (int x, int y, int w, int h, int a)
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a2467546a905f0a2c90b32ac69a55e737}{mult}} (int a\+\_\+x, int a\+\_\+y, int b\+\_\+x, int b\+\_\+y, int c\+\_\+x, int c\+\_\+y)
+\item 
+bool \mbox{\hyperlink{_light_interface_8cpp_a81d00894fe2c39ea3dd721b9f4a81d89}{intersect}} (int a\+\_\+x, int a\+\_\+y, int b\+\_\+x, int b\+\_\+y, int c\+\_\+x, int c\+\_\+y, int d\+\_\+x, int d\+\_\+y)
+\item 
+void \mbox{\hyperlink{_light_interface_8cpp_a624ab125d2b7ef5758f19f79ca3127c6}{get\+Intersection}} (int ax, int ay, int bx, int by, int cx, int cy, int dx, int dy, float \&ix, float \&iy)
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_abfdbdd177bfa9d32d86c836550ab8001}{distance}} (int a\+\_\+x, int a\+\_\+y, int b\+\_\+x, int b\+\_\+y)
+\item 
+bool \mbox{\hyperlink{_light_interface_8cpp_af4de098481b6747b299b02ed1a51ec38}{inw\+Wall}} (int w, int h)
+\item 
+void \mbox{\hyperlink{_light_interface_8cpp_ad858f312c66a8451bee6b78d8d0fae87}{draw\+Wall}} (S\+D\+L\+\_\+\+Renderer $\ast$g\+Renderer)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_afa12c3f96583c09d60ad85f5ca2fda04}{lx\+\_\+}} = 150
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_aa32de1a91a33844e6eb3f8f6067ecb33}{ly\+\_\+}} = 200
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a4b82a373ae5d942235e884ed1894fbac}{lx\+\_\+begin}} = 150
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a09aaa3cea4df158e5844b0db5ef14243}{ly\+\_\+begin}} = 200
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a9c6d3caaee27048620472339bf7f5957}{l\+\_\+h}} = 40
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a6396ab34f8452dd71fe428a782136977}{w\+\_\+h}} = 10
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a63060c3f91c2f7e226331546c3e62966}{draw\+\_\+something}} = 0
+\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{_light_interface_8cpp_a40bb8241d0dadc9e38067efaf01753f3}{fill\+Rect}}
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a0cb76cb18e90329f4297eb6f183f6a71}{walls}} \mbox{[}5\mbox{]}\mbox{[}4\mbox{]}
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a81ebaaaa9674dd420bb5b45214126707}{buffer}} \mbox{[}250000\mbox{]}
+\item 
+int \mbox{\hyperlink{_light_interface_8cpp_a779f6f9dec790bbdf7fa5abcad419b45}{first\+Frame}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_light_interface_8cpp_a1ecc6576a5e8b11861a81992e1768178}\label{_light_interface_8cpp_a1ecc6576a5e8b11861a81992e1768178}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!add\+Wall@{add\+Wall}}
+\index{add\+Wall@{add\+Wall}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{add\+Wall()}{addWall()}}
+{\footnotesize\ttfamily void add\+Wall (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light_interface_8cpp_abfdbdd177bfa9d32d86c836550ab8001}\label{_light_interface_8cpp_abfdbdd177bfa9d32d86c836550ab8001}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!distance@{distance}}
+\index{distance@{distance}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily int distance (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+x,  }\item[{int}]{a\+\_\+y,  }\item[{int}]{b\+\_\+x,  }\item[{int}]{b\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light_interface_8cpp_ad858f312c66a8451bee6b78d8d0fae87}\label{_light_interface_8cpp_ad858f312c66a8451bee6b78d8d0fae87}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!draw\+Wall@{draw\+Wall}}
+\index{draw\+Wall@{draw\+Wall}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+Wall()}{drawWall()}}
+{\footnotesize\ttfamily void draw\+Wall (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{g\+Renderer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a624ab125d2b7ef5758f19f79ca3127c6}\label{_light_interface_8cpp_a624ab125d2b7ef5758f19f79ca3127c6}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!get\+Intersection@{get\+Intersection}}
+\index{get\+Intersection@{get\+Intersection}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{get\+Intersection()}{getIntersection()}}
+{\footnotesize\ttfamily void get\+Intersection (\begin{DoxyParamCaption}\item[{int}]{ax,  }\item[{int}]{ay,  }\item[{int}]{bx,  }\item[{int}]{by,  }\item[{int}]{cx,  }\item[{int}]{cy,  }\item[{int}]{dx,  }\item[{int}]{dy,  }\item[{float \&}]{ix,  }\item[{float \&}]{iy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a81d00894fe2c39ea3dd721b9f4a81d89}\label{_light_interface_8cpp_a81d00894fe2c39ea3dd721b9f4a81d89}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!intersect@{intersect}}
+\index{intersect@{intersect}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily bool intersect (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+x,  }\item[{int}]{a\+\_\+y,  }\item[{int}]{b\+\_\+x,  }\item[{int}]{b\+\_\+y,  }\item[{int}]{c\+\_\+x,  }\item[{int}]{c\+\_\+y,  }\item[{int}]{d\+\_\+x,  }\item[{int}]{d\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light_interface_8cpp_af4de098481b6747b299b02ed1a51ec38}\label{_light_interface_8cpp_af4de098481b6747b299b02ed1a51ec38}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!inw\+Wall@{inw\+Wall}}
+\index{inw\+Wall@{inw\+Wall}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{inw\+Wall()}{inwWall()}}
+{\footnotesize\ttfamily bool inw\+Wall (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a2467546a905f0a2c90b32ac69a55e737}\label{_light_interface_8cpp_a2467546a905f0a2c90b32ac69a55e737}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!mult@{mult}}
+\index{mult@{mult}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{mult()}{mult()}}
+{\footnotesize\ttfamily int mult (\begin{DoxyParamCaption}\item[{int}]{a\+\_\+x,  }\item[{int}]{a\+\_\+y,  }\item[{int}]{b\+\_\+x,  }\item[{int}]{b\+\_\+y,  }\item[{int}]{c\+\_\+x,  }\item[{int}]{c\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_light_interface_8cpp_a81ebaaaa9674dd420bb5b45214126707}\label{_light_interface_8cpp_a81ebaaaa9674dd420bb5b45214126707}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!buffer@{buffer}}
+\index{buffer@{buffer}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily int buffer\mbox{[}250000\mbox{]}}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a63060c3f91c2f7e226331546c3e62966}\label{_light_interface_8cpp_a63060c3f91c2f7e226331546c3e62966}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!draw\+\_\+something@{draw\+\_\+something}}
+\index{draw\+\_\+something@{draw\+\_\+something}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+something}{draw\_something}}
+{\footnotesize\ttfamily int draw\+\_\+something = 0}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a40bb8241d0dadc9e38067efaf01753f3}\label{_light_interface_8cpp_a40bb8241d0dadc9e38067efaf01753f3}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!fill\+Rect@{fill\+Rect}}
+\index{fill\+Rect@{fill\+Rect}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{fill\+Rect}{fillRect}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect fill\+Rect}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a779f6f9dec790bbdf7fa5abcad419b45}\label{_light_interface_8cpp_a779f6f9dec790bbdf7fa5abcad419b45}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!first\+Frame@{first\+Frame}}
+\index{first\+Frame@{first\+Frame}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{first\+Frame}{firstFrame}}
+{\footnotesize\ttfamily int first\+Frame = 0}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a9c6d3caaee27048620472339bf7f5957}\label{_light_interface_8cpp_a9c6d3caaee27048620472339bf7f5957}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!l\+\_\+h@{l\+\_\+h}}
+\index{l\+\_\+h@{l\+\_\+h}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{l\+\_\+h}{l\_h}}
+{\footnotesize\ttfamily int l\+\_\+h = 40}
+
+\mbox{\Hypertarget{_light_interface_8cpp_afa12c3f96583c09d60ad85f5ca2fda04}\label{_light_interface_8cpp_afa12c3f96583c09d60ad85f5ca2fda04}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!lx\+\_\+@{lx\+\_\+}}
+\index{lx\+\_\+@{lx\+\_\+}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{lx\+\_\+}{lx\_}}
+{\footnotesize\ttfamily int lx\+\_\+ = 150}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a4b82a373ae5d942235e884ed1894fbac}\label{_light_interface_8cpp_a4b82a373ae5d942235e884ed1894fbac}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!lx\+\_\+begin@{lx\+\_\+begin}}
+\index{lx\+\_\+begin@{lx\+\_\+begin}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{lx\+\_\+begin}{lx\_begin}}
+{\footnotesize\ttfamily int lx\+\_\+begin = 150}
+
+\mbox{\Hypertarget{_light_interface_8cpp_aa32de1a91a33844e6eb3f8f6067ecb33}\label{_light_interface_8cpp_aa32de1a91a33844e6eb3f8f6067ecb33}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!ly\+\_\+@{ly\+\_\+}}
+\index{ly\+\_\+@{ly\+\_\+}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{ly\+\_\+}{ly\_}}
+{\footnotesize\ttfamily int ly\+\_\+ = 200}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a09aaa3cea4df158e5844b0db5ef14243}\label{_light_interface_8cpp_a09aaa3cea4df158e5844b0db5ef14243}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!ly\+\_\+begin@{ly\+\_\+begin}}
+\index{ly\+\_\+begin@{ly\+\_\+begin}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{ly\+\_\+begin}{ly\_begin}}
+{\footnotesize\ttfamily int ly\+\_\+begin = 200}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a6396ab34f8452dd71fe428a782136977}\label{_light_interface_8cpp_a6396ab34f8452dd71fe428a782136977}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!w\+\_\+h@{w\+\_\+h}}
+\index{w\+\_\+h@{w\+\_\+h}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{w\+\_\+h}{w\_h}}
+{\footnotesize\ttfamily int w\+\_\+h = 10}
+
+\mbox{\Hypertarget{_light_interface_8cpp_a0cb76cb18e90329f4297eb6f183f6a71}\label{_light_interface_8cpp_a0cb76cb18e90329f4297eb6f183f6a71}} 
+\index{Light\+Interface.\+cpp@{Light\+Interface.\+cpp}!walls@{walls}}
+\index{walls@{walls}!Light\+Interface.\+cpp@{Light\+Interface.\+cpp}}
+\subsubsection{\texorpdfstring{walls}{walls}}
+{\footnotesize\ttfamily int walls\mbox{[}5\mbox{]}\mbox{[}4\mbox{]}}
+
